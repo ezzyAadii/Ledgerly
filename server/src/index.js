@@ -1,0 +1,1 @@
+import config from './config.js';import {getDb} from './db/index.js';import {createApp} from './app.js';getDb();createApp().listen(config.port,()=>console.log(`Ledgerly API listening on port ${config.port}`));
